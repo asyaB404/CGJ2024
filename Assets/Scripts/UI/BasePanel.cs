@@ -10,7 +10,7 @@ public class BasePanel<T> : MonoBehaviour where T : class
     public static T Instance { get; private set; }
     public bool IsActive { get; private set; }
     private readonly Dictionary<string, List<UIBehaviour>> _controlDic = new();
-
+    protected CanvasGroup canvasGroup;
     protected virtual void Awake()
     {
         Instance = this as T;
@@ -23,6 +23,9 @@ public class BasePanel<T> : MonoBehaviour where T : class
         FindChildrenControl<Slider>();
         FindChildrenControl<ScrollRect>();
         FindChildrenControl<InputField>();
+
+        if(!TryGetComponent<CanvasGroup>(out canvasGroup))
+            canvasGroup = gameObject.AddComponent<CanvasGroup>();
     }
 
     public virtual void ShowMe()
