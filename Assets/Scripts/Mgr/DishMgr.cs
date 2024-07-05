@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class DishMgr : SingletonMono<DishMgr>
 {
-    
     private const int H = Const.H;
     private const int w = Const.W;
     private readonly Queue<Dish>[] _queues = new Queue<Dish>[H];
@@ -16,8 +15,8 @@ public class DishMgr : SingletonMono<DishMgr>
 
     public Dish SpawnDish(Vector2 pos)
     {
-        GameObject gobj = Instantiate(dishPrefab);
-        gobj.transform.position = pos;
+        GameObject gobj = Instantiate(dishPrefab, transform, false);
+        gobj.transform.localPosition = pos;
         Dish dish = gobj.GetComponent<Dish>();
         dish.InitForRandom();
         return dish;
@@ -62,7 +61,7 @@ public class DishMgr : SingletonMono<DishMgr>
             _queues[i] = new Queue<Dish>();
             for (int j = 0; j < w; j++)
             {
-                _queues[i].Enqueue(SpawnDish(new(w - i, j)));
+                _queues[i].Enqueue(SpawnDish(new(-i - 1, j)));
             }
         }
     }
