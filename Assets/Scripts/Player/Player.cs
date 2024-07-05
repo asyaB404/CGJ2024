@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Player : SingletonMono<Player>
@@ -39,6 +40,7 @@ public class Player : SingletonMono<Player>
         {
             if (DishMgr.Instance.GetDish(out Dish dish, Y))
             {
+                dish.transform.DOKill(true);
                 DishInHand = dish;
                 dish.transform.SetParent(transform);
                 dish.transform.localPosition = Vector3.zero;
