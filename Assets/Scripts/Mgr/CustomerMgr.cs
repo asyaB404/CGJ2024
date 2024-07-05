@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class CustomerMgr : SingletonMono<CustomerMgr>
@@ -14,6 +15,15 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
 
     //计时器
     private float _timer;
+
+
+    private void Start()
+    {
+        for (int i = 0; i < Const.W1; i++)
+        {
+            _queues[i] ??= new Queue<Customer>(Const.W1);
+        }
+    }
 
     private void Update()
     {
@@ -38,8 +48,6 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
         }
 
         var queue = _queues[y];
-        if (queue == null)
-            queue = new Queue<Customer>(Const.W1);
 
         if (queue.Count <= 0) return false;
 
@@ -47,7 +55,18 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
         customer.SendCallBack(dish.Type == customer.WantType);
         //送完餐之后销毁
         customer.DeSpawn();
+        UpdateCustoms(queue);
         return true;
+    }
+
+    private void UpdateCustoms(IEnumerable<Customer> queue)
+    {
+        foreach (var customer in queue)
+        {
+            Transform customerTransform = customer.transform;
+            customerTransform.DOKill(true);
+            customerTransform.DOLocalMove(customerTransform.position + new Vector3(-1, 0, 0), 0.5f);
+        }
     }
 
 

@@ -14,6 +14,7 @@ public class Player : SingletonMono<Player>
 
     //玩家目前得到的积分
     public int Score { get; set; }
+
     //血条
     public float Health { get; set; }
 
@@ -67,6 +68,9 @@ public class Player : SingletonMono<Player>
                 {
                     //送餐失败
                 }
+
+                DishInHand.DeSpawn();
+                DishInHand = null;
             }
             else
             {

@@ -43,7 +43,7 @@ public class DishMgr : SingletonMono<DishMgr>
         return true;
     }
 
-    private void UpdateDishs(Queue<Dish> queue)
+    private void UpdateDishs(IEnumerable<Dish> queue)
     {
         foreach (var dish in queue)
         {
