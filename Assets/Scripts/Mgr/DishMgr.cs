@@ -10,13 +10,15 @@ public class DishMgr : SingletonMono<DishMgr>
     private const int w = Const.W;
     private readonly Queue<Dish>[] _queues = new Queue<Dish>[H];
     [SerializeField] private GameObject dishPrefab;
+    [SerializeField] private Sprite[] dishIcons;
+    public Sprite[] DishIcons => dishIcons;
 
     public Dish SpawnDish(Vector2 pos)
     {
         GameObject gobj = Instantiate(dishPrefab);
         gobj.transform.position = pos;
         Dish dish = gobj.GetComponent<Dish>();
-
+        dish.InitForRandom();
         return dish;
     }
 

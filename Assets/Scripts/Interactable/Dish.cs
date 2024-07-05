@@ -10,10 +10,12 @@ public enum DishType
 public class Dish : MonoBehaviour
 {
     public DishType Type { get; private set; }
+    [SerializeField] private SpriteRenderer sr;
 
-    public void Init()
+    public void InitForRandom()
     {
         Type = Utils.GetRandomEnumValue<DishType>();
+        sr.sprite = DishMgr.Instance.DishIcons[(int)Type];
     }
 
     public void DeSpawn()
