@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class DishMgr : SingletonMono<DishMgr>
 {
+    
     private const int H = Const.H;
     private const int w = Const.W;
     private readonly Queue<Dish>[] _queues = new Queue<Dish>[H];
