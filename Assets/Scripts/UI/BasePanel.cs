@@ -5,15 +5,15 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 //需要优化同名问题
-public class BasePanel<T> : MonoBehaviour where T : class
+public class BasePanel<T1> : MonoBehaviour where T1 : class
 {
-    public static T Instance { get; private set; }
+    public static T1 Instance { get; private set; }
     public bool IsActive { get; private set; }
     private readonly Dictionary<string, List<UIBehaviour>> _controlDic = new();
     protected CanvasGroup canvasGroup;
     protected virtual void Awake()
     {
-        Instance = this as T;
+        Instance = this as T1;
         FindChildrenControl<Button>();
         FindChildrenControl<Image>();
         FindChildrenControl<Text>();
