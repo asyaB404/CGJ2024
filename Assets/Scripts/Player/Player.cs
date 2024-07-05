@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : SingletonMono<Player>
 {
     public Dish DishInHand { get; private set; } = null;
 
