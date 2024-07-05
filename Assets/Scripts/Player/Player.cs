@@ -13,7 +13,7 @@ public class Player : SingletonMono<Player>
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if (Y <= 0)
+            if (Y >= Const.H - 1)
             {
                 //卡住的逻辑
                 return;
@@ -25,7 +25,7 @@ public class Player : SingletonMono<Player>
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            if (Y >= Const.H - 1)
+            if (Y <= 0)
             {
                 //卡住的逻辑
                 return;
@@ -40,6 +40,8 @@ public class Player : SingletonMono<Player>
             if (DishMgr.Instance.GetDish(out Dish dish, Y))
             {
                 DishInHand = dish;
+                dish.transform.SetParent(transform);
+                dish.transform.localPosition = Vector3.zero;
             }
         }
 
