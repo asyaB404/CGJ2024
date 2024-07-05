@@ -31,7 +31,7 @@ public class Customer : MonoBehaviour
         }
         else
         {
-            //送错餐的逻辑 暂时没想好
+            //送错餐的逻辑 暂时没想好 说不定可以让顾客刷新间隔变短或者加一个血条机制啥的
         }
     }
 
