@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CustomerMgr : SingletonMono<CustomerMgr>
 {
-    private Queue<Customer>[] _queues = new Queue<Customer>[Const.W1];
+    private Queue<Customer>[] _queues = new Queue<Customer>[Const.H];
 
     [SerializeField] private GameObject customerPrefab;
 
