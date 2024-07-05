@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class DishMgr : SingletonMono<DishMgr>
 {
-    
+    private Queue<Dish>[] _queues = new Queue<Dish>[5];
 }
