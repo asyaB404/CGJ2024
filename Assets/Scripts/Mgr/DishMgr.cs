@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DishMgr : SingletonMono<DishMgr>
+public class CustomerMgr : SingletonMono<CustomerMgr>
 {
-    private Queue<Dish>[] _queues = new Queue<Dish>[5];
+    private Queue<Customer>[] _queues = new Queue<Customer>[5];
 }

@@ -2,32 +2,33 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = System.Random;
 
-public class CustomerMgr : SingletonMono<CustomerMgr>
+public class DishMgr : SingletonMono<DishMgr>
 {
-    private int h = 4;
-    private int w = 4;
-    private Queue<Customer>[] _queues = new Queue<Customer>[h];
-    [SerializeField] private GameObject customerPrefab;
+    private static readonly int h = 4;
+    private static readonly int w = 4;
+    private readonly Queue<Dish>[] _queues = new Queue<Dish>[h];
+    [SerializeField] private GameObject dishPrefab;
 
-    public Customer SpawnCustomer(Vector2 pos)
+    public Dish SpawnDish(Vector2 pos)
     {
-        GameObject gobj = Instantiate(customerPrefab);
+        GameObject gobj = Instantiate(dishPrefab);
         gobj.transform.position = pos;
-        Customer customer = gobj.GetComponent<Customer>();
-        customer.Init();
-        return customer;
+        Dish dish = gobj.GetComponent<Dish>();
+        dish.Init();
+        return dish;
     }
 
     private void Start()
     {
         for (int i = 0; i < h; i++)
         {
-            _queues[i] = new Queue<Customer>();
+            _queues[i] = new Queue<Dish>();
             for (int j = 0; j < w; j++)
             {
-                _queues[i].Enqueue(SpawnCustomer(new(w - i, j)));
+                _queues[i].Enqueue(SpawnDish(new(w - i, j)));
             }
         }
     }
