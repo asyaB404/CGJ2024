@@ -1,4 +1,4 @@
-public class Const
+public static class Const
 {
     //送餐传送带宽长
     public const int W = 4;

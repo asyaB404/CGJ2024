@@ -38,7 +38,7 @@ public class DishMgr : SingletonMono<DishMgr>
         }
 
         res = queue.Dequeue();
-        queue.Enqueue(SpawnDish(new(-Const.W-1, y)));
+        queue.Enqueue(SpawnDish(new Vector2(-Const.W-1, y)));
         UpdateDishs(queue);
         return true;
     }
@@ -60,7 +60,7 @@ public class DishMgr : SingletonMono<DishMgr>
             _queues[i] = new Queue<Dish>();
             for (int j = 0; j < Const.W; j++)
             {
-                _queues[i].Enqueue(SpawnDish(new(-j - 1, i)));
+                _queues[i].Enqueue(SpawnDish(new Vector2(-j - 1, i)));
             }
         }
     }
