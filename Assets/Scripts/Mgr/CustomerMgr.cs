@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CustomerMgr : MonoBehaviour
+public class CustomerMgr : SingletonMono<CustomerMgr>
 {
     
 }
