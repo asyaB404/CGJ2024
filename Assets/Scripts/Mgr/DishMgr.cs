@@ -14,7 +14,7 @@ public class DishMgr : SingletonMono<DishMgr>
         GameObject gobj = Instantiate(dishPrefab);
         gobj.transform.position = pos;
         Dish dish = gobj.GetComponent<Dish>();
-        // dish.Init();
+        
         return dish;
     }
 

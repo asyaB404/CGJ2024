@@ -1,12 +1,19 @@
 using UnityEngine;
 
+public enum DishType
+{
+    Dish1,
+    Dish2,
+    Dish3
+}
+
 public class Dish : MonoBehaviour
 {
-    [SerializeField] private DishInfo info;
+    public DishType Type { get; private set; }
 
-    public void Init(DishInfo info)
+    public void Init()
     {
-        this.info = info;
+        Type = Utils.GetRandomEnumValue<DishType>();
     }
 
     public void DeSpawn()
