@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Dish : MonoBehaviour
 {
-    public void Init()
+    [SerializeField] private DishInfo info;
+
+    public void Init(DishInfo info)
     {
+        this.info = info;
     }
 
     public void DeSpawn()
