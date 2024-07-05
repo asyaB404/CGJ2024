@@ -6,9 +6,14 @@ using UnityEngine;
 
 public class Player : SingletonMono<Player>
 {
+    //手上的菜品
     public Dish DishInHand { get; private set; } = null;
 
+    //玩家位置当前处在的Y轴值
     private int Y => Mathf.FloorToInt(transform.position.y);
+
+    //玩家目前得到的积分
+    public int Score { get; set; }
 
     private void Update()
     {
@@ -16,7 +21,7 @@ public class Player : SingletonMono<Player>
         {
             if (Y >= Const.H - 1)
             {
-                //卡住的逻辑
+                //卡住的逻辑  可以用个动画或音效来表现？
                 return;
             }
 
@@ -43,13 +48,28 @@ public class Player : SingletonMono<Player>
                 dish.transform.DOKill(true);
                 DishInHand = dish;
                 dish.transform.SetParent(transform);
-                dish.transform.localPosition = Vector3.zero;
+                dish.transform.localPosition = new Vector3(0, -0.01f, 0);
             }
         }
 
         //送餐
         if (Input.GetKeyDown(KeyCode.K))
         {
+            if (DishInHand)
+            {
+                if (DishInHand && CustomerMgr.Instance.SendDishToCustomer(DishInHand, Y))
+                {
+                    //送餐成功
+                }
+                else
+                {
+                    //送餐失败
+                }
+            }
+            else
+            {
+                //手上没东西还硬送的逻辑
+            }
         }
 
         //销毁

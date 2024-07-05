@@ -10,6 +10,7 @@ public class DishMgr : SingletonMono<DishMgr>
     private const int W = Const.W;
     private readonly Queue<Dish>[] _queues = new Queue<Dish>[H];
     [SerializeField] private GameObject dishPrefab;
+    //菜品贴图
     [SerializeField] private Sprite[] dishIcons;
     public Sprite[] DishIcons => dishIcons;
 

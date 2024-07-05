@@ -1,6 +1,6 @@
 using System;
 
-public class Utils
+public static class Utils
 {
     //得到枚举中的随机值
     public static T GetRandomEnumValue<T>()
