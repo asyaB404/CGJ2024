@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4816978812925754232}
   - component: {fileID: 8709698382796082774}
-  - component: {fileID: 8596859282438653458}
+  - component: {fileID: -2752116992997191245}
   m_Layer: 0
-  m_Name: Dish
+  m_Name: Customer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8596859282438653458
+--- !u!114 &-2752116992997191245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3708175454874559382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f963fa76950452e94e1d8ab1ed5f8df, type: 3}
+  m_Script: {fileID: 11500000, guid: d06509aa849e4c94a2bac99ad8328b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 8709698382796082774}

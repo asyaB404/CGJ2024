@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class DishMgr : SingletonMono<DishMgr>
 {
-    private const int H = Const.H;
-    private const int W = Const.W;
-    private readonly Queue<Dish>[] _queues = new Queue<Dish>[H];
+    private readonly Queue<Dish>[] _queues = new Queue<Dish>[Const.H];
     [SerializeField] private GameObject dishPrefab;
     //菜品贴图
     [SerializeField] private Sprite[] dishIcons;
@@ -40,7 +38,7 @@ public class DishMgr : SingletonMono<DishMgr>
         }
 
         res = queue.Dequeue();
-        queue.Enqueue(SpawnDish(new(-W-1, y)));
+        queue.Enqueue(SpawnDish(new(-Const.W-1, y)));
         UpdateDishs(queue);
         return true;
     }
@@ -57,10 +55,10 @@ public class DishMgr : SingletonMono<DishMgr>
 
     private void Start()
     {
-        for (int i = 0; i < H; i++)
+        for (int i = 0; i < Const.H; i++)
         {
             _queues[i] = new Queue<Dish>();
-            for (int j = 0; j < W; j++)
+            for (int j = 0; j < Const.W; j++)
             {
                 _queues[i].Enqueue(SpawnDish(new(-j - 1, i)));
             }

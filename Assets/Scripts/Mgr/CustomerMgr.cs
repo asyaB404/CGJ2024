@@ -38,6 +38,9 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
         }
 
         var queue = _queues[y];
+        if (queue == null)
+            queue = new Queue<Customer>(Const.W1);
+
         if (queue.Count <= 0) return false;
 
         var customer = queue.Dequeue();
