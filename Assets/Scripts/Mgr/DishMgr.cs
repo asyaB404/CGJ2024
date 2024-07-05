@@ -22,32 +22,36 @@ public class DishMgr : SingletonMono<DishMgr>
         return dish;
     }
 
-
-    public Dish GetDish(int y)
+    public bool GetDish(out Dish res, int y)
     {
         var queue = _queues[y];
+        res = null;
         if (y < 0 || y > Const.H - 1)
         {
             Debug.LogError("y不能超过地图高度");
-            return null;
+            return false;
         }
 
         if (Player.Instance.DishInHand)
         {
             //手上已经有的逻辑
-            return null;
+            return false;
         }
 
-        Dish res = queue.Dequeue();
+        UpdateDishs(queue);
+        res = queue.Dequeue();
         queue.Enqueue(SpawnDish(new(-1, y)));
+        return true;
+    }
+
+    private void UpdateDishs(Queue<Dish> queue)
+    {
         foreach (var dish in queue)
         {
             Transform dishTransform = dish.transform;
             dishTransform.DOKill(true);
             dishTransform.DOLocalMove(dishTransform.position + new Vector3(1, 0, 0), 0.5f);
         }
-
-        return res;
     }
 
     private void Start()

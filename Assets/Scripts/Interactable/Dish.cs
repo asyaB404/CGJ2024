@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//菜的类型
 public enum DishType
 {
     Dish1,
