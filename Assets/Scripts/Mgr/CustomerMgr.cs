@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,28 @@ using UnityEngine;
 public class CustomerMgr : SingletonMono<CustomerMgr>
 {
     private Queue<Customer>[] _queues = new Queue<Customer>[Const.W1];
+
     [SerializeField] private GameObject customerPrefab;
+
+    //刷新顾客间隔
+    public float SpawnDuration { get; set; } = 1.5f;
+
+    //计时器
+    private float _timer;
+
+    private void Update()
+    {
+        if (_timer > 0)
+        {
+            _timer -= Time.deltaTime;
+        }
+        else
+        {
+            SpawnCustomer(MyRandom.Instance.NextInt(Const.H));
+            _timer = SpawnDuration;
+        }
+    }
+
 
     public bool SendDishToCustomer(Dish dish, int y)
     {
@@ -20,8 +42,11 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
 
         var customer = queue.Dequeue();
         customer.SendCallBack(dish.Type == customer.WantType);
+        //送完餐之后销毁
+        customer.DeSpawn();
         return true;
     }
+
 
     public Customer SpawnCustomer(int y)
     {

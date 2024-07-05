@@ -15,6 +15,8 @@ public class Customer : MonoBehaviour
         WantType = Utils.GetRandomEnumValue<DishType>();
         //顾客的贴图，到时候得换，测试先用菜品贴图
         sr.sprite = DishMgr.Instance.DishIcons[(int)WantType];
+        //可以拓展弄不同的顾客  等级高的顾客加的分多一点或者有让下一个客人慢点来，这里暂时让分数都一样
+        _score = 1;
     }
 
     /// <summary>
@@ -35,7 +37,7 @@ public class Customer : MonoBehaviour
 
     public void DeSpawn()
     {
-        //销毁音效，动画啥的？
+        //可以换成客人慢慢消失的逻辑
         Destroy(gameObject);
     }
 }
