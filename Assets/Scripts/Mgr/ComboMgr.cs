@@ -22,9 +22,9 @@ public class ComboMgr : SingletonMono<ComboMgr>
             if (combing != value)
             {
                 if (value)
-                    comboParent.DOScale(1f, 0.1f);
+                    transform.DOScale(1f, 0.1f);
                 else
-                    comboParent.DOScale(0f, 0.1f);
+                    transform.DOScale(0f, 0.1f);
             }
 
             combing = value;
@@ -50,7 +50,10 @@ public class ComboMgr : SingletonMono<ComboMgr>
         }
         else
         {
-            Combing = false;
+            if (Combing)
+            {
+                Combing = false;
+            }
         }
     }
 
