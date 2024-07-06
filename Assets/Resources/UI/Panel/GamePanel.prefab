@@ -486,6 +486,9 @@ MonoBehaviour:
   score: {fileID: 3531034788819850017}
   waiter: {fileID: 5897613224058642400}
   menu: {fileID: 4010912570221552161}
+  sprites:
+  - {fileID: -444262672, guid: 9bbb3ffe74f993946ad758a4a2e70090, type: 3}
+  - {fileID: -1144012128, guid: cf93644940dd0b64fb38579859520885, type: 3}
 --- !u!1 &3957275316919608589
 GameObject:
   m_ObjectHideFlags: 0

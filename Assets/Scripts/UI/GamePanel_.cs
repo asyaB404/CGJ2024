@@ -11,6 +11,8 @@ public class GamePanel_ : PanelBase
     public Text score;
     public Text waiter;
     public Button menu;
+
+    public List<Sprite> sprites;
     protected override void Init()
     {
         menu.onClick.AddListener(()=>{UIManager.Instance.ShowPanel<StopPanel>();
@@ -21,6 +23,9 @@ public class GamePanel_ : PanelBase
     protected override void Update()
     {
         base.Update();
-        waiter.text="待取餐人数："+CustomerMgr.Instance.Count;
+        int CustCount=CustomerMgr.Instance.Count;
+        waiter.text="待取餐人数："+CustCount;
+        if(CustCount>20)sideOBJ.GetComponent<UnityEngine.UI.Image>().sprite=sprites[1];
+        else sideOBJ.GetComponent<UnityEngine.UI.Image>().sprite=sprites[0];
     }
 }
