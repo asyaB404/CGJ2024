@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Player : SingletonMono<Player>
 {
+    public float GameTime { get; private set; }
+
     //手上的菜品
     public Dish DishInHand { get; private set; } = null;
 
@@ -18,8 +20,16 @@ public class Player : SingletonMono<Player>
     //血条
     public float Health { get; set; }
 
+    public int Combo { get; private set; }
+
+    public void AddCombo()
+    {
+        Combo += 1;
+    }
+
     private void Update()
     {
+        GameTime += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (Y >= Const.H - 1)
@@ -91,6 +101,4 @@ public class Player : SingletonMono<Player>
             DishInHand = null;
         }
     }
-
 }
-

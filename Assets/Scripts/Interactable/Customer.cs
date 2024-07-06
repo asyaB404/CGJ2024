@@ -1,14 +1,17 @@
 using UnityEngine;
+using DG.Tweening;
 
 
 public class Customer : MonoBehaviour
 {
     //顾客需要的菜品类型
     public DishType WantType { get; private set; }
+
     //送餐成功给予的积分
     private int _score;
-    
+
     [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private SpriteRenderer sr1;
 
     public void InitForRandom()
     {
@@ -27,17 +30,16 @@ public class Customer : MonoBehaviour
     {
         if (isRight)
         {
-            Player.Instance.Score += _score;
+            Player.Instance.Score += _score * Player.Instance.Combo;
         }
         else
         {
-            //送错餐的逻辑 暂时没想好 说不定可以让顾客刷新间隔变短或者加一个血条机制啥的
+            Player.Instance.Health -= 10;
         }
     }
 
     public void DeSpawn()
     {
-        //可以换成客人慢慢消失的逻辑
-        Destroy(gameObject);
+        sr.DOFade(0, 0.5f).OnComplete(() => { Destroy(gameObject); });
     }
 }
