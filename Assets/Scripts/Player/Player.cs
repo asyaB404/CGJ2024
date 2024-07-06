@@ -13,13 +13,39 @@ public class Player : SingletonMono<Player>
     private int Y => Mathf.FloorToInt(transform.position.y);
 
     //玩家目前得到的积分
-    public int Score { get; set; }
+    private int score;
+    public int Score { get{return score;} set{} }
 
     //血条
-    public float Health { get; set; }
+    private float health;
+    public float Health
+    {
+        get { return health; }
+        set
+        {
+            health = value; 
+            if (health <= 0) { health = 0; GameOver(); }
+            GamePanel_ gameui=UIManager.Instance.GetPanel<GamePanel_>();
+            if(gameui)gameui.health.value=health/100;
+        }
+    }
 
     private void Update()
     {
+        if (health <= 0) return;
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+                UIManager.Instance.HidePanel<StopPanel>();
+            }
+            else
+            {
+                Time.timeScale = 0;
+                UIManager.Instance.ShowPanel<StopPanel>();
+            }
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (Y >= Const.H - 1)
@@ -91,6 +117,9 @@ public class Player : SingletonMono<Player>
             DishInHand = null;
         }
     }
-
+    private void GameOver()
+    {
+        UIManager.Instance.ShowPanel<OverPanel>();
+    }
 }
 
