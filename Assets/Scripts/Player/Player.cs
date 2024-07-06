@@ -6,10 +6,6 @@ using UnityEngine;
 
 public class Player : SingletonMono<Player>
 {
-<<<<<<< HEAD
-   
-}
-=======
     //手上的菜品
     public Dish DishInHand { get; private set; } = null;
 
@@ -95,5 +91,7 @@ public class Player : SingletonMono<Player>
             DishInHand = null;
         }
     }
+
 }
->>>>>>> origin/main
+  
+

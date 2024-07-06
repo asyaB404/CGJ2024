@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u63D0\u793A\u6C14\u6CE1_0"
+      name: Dish1
       rect:
         serializedVersion: 2
         x: 1719
@@ -105,7 +105,7 @@ TextureImporter:
         width: 208
         height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u63D0\u793A\u6C14\u6CE1_1"
+      name: Dish2
       rect:
         serializedVersion: 2
         x: 1719
@@ -126,7 +126,7 @@ TextureImporter:
         width: 208
         height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u63D0\u793A\u6C14\u6CE1_2"
+      name: Dish3
       rect:
         serializedVersion: 2
         x: 1719
@@ -147,7 +147,7 @@ TextureImporter:
         width: 208
         height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u63D0\u793A\u6C14\u6CE1_3"
+      name: Dish4
       rect:
         serializedVersion: 2
         x: 1719
@@ -168,7 +168,7 @@ TextureImporter:
         width: 208
         height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u63D0\u793A\u6C14\u6CE1_0": -561321618
-      "\u63D0\u793A\u6C14\u6CE1_1": -2017315685
-      "\u63D0\u793A\u6C14\u6CE1_2": -1584874004
-      "\u63D0\u793A\u6C14\u6CE1_3": 2078715356
+      Dish1: -561321618
+      Dish2: -2017315685
+      Dish3: -1584874004
+      Dish4: 2078715356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
