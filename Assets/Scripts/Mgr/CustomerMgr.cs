@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 
@@ -9,6 +10,10 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
     private Queue<Customer>[] _queues = new Queue<Customer>[Const.H];
 
     [SerializeField] private GameObject customerPrefab;
+
+    public int Count =>
+        _queues.Sum(variable => variable.Count);
+
 
     //刷新顾客间隔
     public float SpawnDuration
