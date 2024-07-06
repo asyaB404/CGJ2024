@@ -16,7 +16,7 @@ public class GamePanel_ : PanelBase
     protected override void Init()
     {
         menu.onClick.AddListener(()=>{UIManager.Instance.ShowPanel<StopPanel>();
-            Debug.Log("sdaasadd");
+            // Debug.Log("sdaasadd");
         });
     }
 
@@ -27,5 +27,7 @@ public class GamePanel_ : PanelBase
         waiter.text="待取餐人数："+CustCount;
         if(CustCount>20)sideOBJ.GetComponent<UnityEngine.UI.Image>().sprite=sprites[1];
         else sideOBJ.GetComponent<UnityEngine.UI.Image>().sprite=sprites[0];
+        health.value=Player.Instance.Health/100;
+        score.text = "得分：" + Player.Instance.Score;
     }
 }

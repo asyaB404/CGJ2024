@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 73479773, guid: 3cc54d89ce137a141b05ff6018570739, type: 3}
+  m_Sprite: {fileID: -1761355265, guid: 3cc54d89ce137a141b05ff6018570739, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -482,7 +482,7 @@ MonoBehaviour:
   speed: 10
   canvasGroup: {fileID: 0}
   sideOBJ: {fileID: 5870087473769941589}
-  health: {fileID: 0}
+  health: {fileID: 451251252724679663}
   score: {fileID: 3531034788819850017}
   waiter: {fileID: 5897613224058642400}
   menu: {fileID: 4010912570221552161}

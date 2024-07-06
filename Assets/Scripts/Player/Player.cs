@@ -25,8 +25,7 @@ public class Player : SingletonMono<Player>
         set
         {
             _score = value;
-            GamePanel_ gameui = UIManager.Instance.GetPanel<GamePanel_>();
-            if (gameui) gameui.score.text = "得分：" + _score;
+            
         }
     }
 

@@ -131,7 +131,7 @@ TextureImporter:
         width: 0
         height: 0
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,10 +143,52 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: "ui - \u526F\u672C - \u526F\u672C_0"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 424
+        width: 3019
+        height: 1236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5939077d269f2d4d8b62644f377b750
+      internalID: -1302201372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ui - \u526F\u672C - \u526F\u672C_1"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3065
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fea368a2cb73e41a3384f4391cc234
+      internalID: -1761355265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 71069937b13981c4e82290bbec7f64c2
     internalID: 0
     vertices: []
     indices: 
@@ -155,6 +197,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       : 2877471580529523173
+      "ui - \u526F\u672C - \u526F\u672C_0": -1302201372
+      "ui - \u526F\u672C - \u526F\u672C_1": -1761355265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
