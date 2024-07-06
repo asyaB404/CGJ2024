@@ -99,7 +99,7 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
         Customer customer = gobj.GetComponent<Customer>();
         customer.InitForRandom();
         queue.Enqueue(customer);
-        customer.transform.localPosition = new Vector2(queue.Count, y);
+        customer.transform.localPosition = new Vector2(queue.Count + 0.4f, y);
         return customer;
     }
 }

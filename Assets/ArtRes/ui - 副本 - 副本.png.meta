@@ -123,22 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 
+      name: "ui - \u526F\u672C - \u526F\u672C_1"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 3065
+        height: 337
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5e97eb03825dee720800000000000000
-      internalID: 2877471580529523173
+      spriteID: 0664c5a446eef594ab311ba6d59f9097
+      internalID: -1182503445
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 71069937b13981c4e82290bbec7f64c2
+=======
+    spriteID: b3703676335b6f34293647c211c79a96
+>>>>>>> origin/main
     internalID: 0
     vertices: []
     indices: 
@@ -196,9 +200,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       : 2877471580529523173
       "ui - \u526F\u672C - \u526F\u672C_0": -1302201372
       "ui - \u526F\u672C - \u526F\u672C_1": -1761355265
+=======
+      "ui - \u526F\u672C - \u526F\u672C_0": 218043423
+      "ui - \u526F\u672C - \u526F\u672C_1": -1182503445
+>>>>>>> origin/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
