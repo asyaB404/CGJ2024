@@ -18,6 +18,7 @@ public abstract class PanelBase : MonoBehaviour
     protected virtual void Start()
     {
         Init();
+        Debug.Log("实现了这一步");
     }
     public virtual void ShowMe(){
         isHide=false;
