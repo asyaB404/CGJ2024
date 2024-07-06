@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
@@ -36,6 +37,22 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
         for (int i = 0; i < Const.W1; i++)
         {
             _queues[i] ??= new Queue<Customer>(Const.W1);
+        }
+
+        StartCoroutine(nameof(HealthCoroutine));
+    }
+
+    private IEnumerator HealthCoroutine()
+    {
+        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+        while (Player.Instance.Health > 0)
+        {
+            if (Count > 20)
+            {
+                Player.Instance.Health -= (Count - 20);
+            }
+
+            yield return waitForSeconds;
         }
     }
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3cc54d89ce137a141b05ff6018570739
+guid: d0b30db0c90eed04ea045d4e1adafee0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 210
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,19 +69,6 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "ui - \u526F\u672C - \u526F\u672C_1"
+      name: rem_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3065
-        height: 337
+        x: 1248
+        y: 1203
+        width: 264
+        height: 299
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0664c5a446eef594ab311ba6d59f9097
-      internalID: -8530882951099341567
+      spriteID: a07f10f73cd25014cbf26576d2ba67b7
+      internalID: -1455062000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "ui - \u526F\u672C - \u526F\u672C_1"
+      name: rem_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3065
-        height: 337
+        x: 1593
+        y: 1201
+        width: 264
+        height: 299
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,8 +145,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70fea368a2cb73e41a3384f4391cc234
-      internalID: -8530882951099341567
+      spriteID: ddf04360935496542b24a04ac47e180a
+      internalID: -1588798778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rem_3
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 873
+        width: 208
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3596eb0e820fcc49a051f7906f8d3d0
+      internalID: 363704676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rem_6
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 508
+        width: 208
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e16b7a48d3a57469f57a1acf0914c9
+      internalID: -656935828
       vertices: []
       indices: 
       edges: []
@@ -167,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2fc71d359ab4a274ba5e5f804a3a990a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -175,8 +204,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "ui - \u526F\u672C - \u526F\u672C_0": 813742693859098562
-      "ui - \u526F\u672C - \u526F\u672C_1": -8530882951099341567
+      rem_0: -1455062000
+      rem_1: -1588798778
+      rem_2: -1168363787
+      rem_3: 363704676
+      rem_4: 1727004235
+      rem_5: 1033216048
+      rem_6: -656935828
+      rem_7: -1920937663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

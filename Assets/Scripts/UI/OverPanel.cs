@@ -12,5 +12,6 @@ public class OverPanel : PanelBase
     {
         again.onClick.AddListener(()=>MySceneManager.MSceneManager("Game"));
         goHome.onClick.AddListener(()=>MySceneManager.MSceneManager("Home"));
+        Time.timeScale = 0;
     }
 }

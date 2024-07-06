@@ -3,17 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Player : SingletonMono<Player>
 {
     public float GameTime { get; private set; }
 
+    //累死我了 懒得做动画机了
+    [SerializeField] private Sprite[] sprites;
 
     //手上的菜品
     public Dish DishInHand { get; private set; } = null;
 
     //玩家位置当前处在的Y轴值
     private int Y => Mathf.FloorToInt(transform.position.y);
+    [SerializeField] private SpriteRenderer sr;
 
     //玩家目前得到的积分
 
@@ -21,12 +25,11 @@ public class Player : SingletonMono<Player>
 
     public int Score
     {
-        get { return _score; }
+        get => _score;
         set
         {
             _score = value;
-            GamePanel gameui = UIManager.Instance.GetPanel<GamePanel>();
-            if (gameui) gameui.score.text = "得分：" + _score;
+            GamePanel.Instance.score.text = "得分：" + _score;
         }
     }
 
@@ -39,7 +42,11 @@ public class Player : SingletonMono<Player>
         set
         {
             health = value;
-            GamePanel.Instance.health.value = health;
+            GamePanel.Instance.health.value = health / 100;
+            if (health <= 0)
+            {
+                GameOver();
+            }
         }
     }
 
@@ -67,8 +74,18 @@ public class Player : SingletonMono<Player>
                 return;
             }
 
-            transform.DOLocalMove(transform.position + new Vector3(0, 1, 0), 0.1f).SetEase(Ease.Linear);
-            // transform.position += new Vector3(0, 1, 0);
+            transform.DOKill(true);
+            transform.DOLocalMove(transform.position + new Vector3(0, 1, 0), 0.05f).SetEase(Ease.Linear);
+            if (!DishInHand)
+            {
+                sr.sprite = sprites[0];
+            }
+
+            if (DishInHand)
+            {
+                sr.sprite = sprites[2];
+                DishInHand.transform.localPosition = new Vector3(0.0f, -0.23f, 0);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.S))
@@ -79,24 +96,38 @@ public class Player : SingletonMono<Player>
                 return;
             }
 
-            transform.DOLocalMove(transform.position + new Vector3(0, -1, 0), 0.1f).SetEase(Ease.Linear);
+            transform.DOKill(true);
+            transform.DOLocalMove(transform.position + new Vector3(0, -1, 0), 0.05f).SetEase(Ease.Linear);
+            sr.sprite = sprites[2];
+            if (DishInHand)
+            {
+                DishInHand.transform.localPosition = new Vector3(0.0f, -0.23f, 0);
+            }
         }
 
         //取餐
         if (Input.GetKeyDown(KeyCode.J))
         {
+            sr.sprite = sprites[3];
             if (DishMgr.Instance.GetDish(out Dish dish, Y))
             {
                 dish.transform.DOKill(true);
                 DishInHand = dish;
                 dish.transform.SetParent(transform);
-                dish.transform.localPosition = new Vector3(0, -0.01f, 0);
+                dish.transform.localPosition = new Vector3(0, -0.23f, 0);
+                dish.transform.localScale = new Vector3(1, 0.42f, 1);
+            }
+
+            if (DishInHand)
+            {
+                DishInHand.transform.localPosition = new Vector3(-0.3f, -0.23f, 0);
             }
         }
 
         //送餐
         if (Input.GetKeyDown(KeyCode.K))
         {
+            sr.sprite = sprites[1];
             if (DishInHand)
             {
                 if (DishInHand && CustomerMgr.Instance.SendDishToCustomer(DishInHand, Y))
@@ -112,6 +143,11 @@ public class Player : SingletonMono<Player>
             else
             {
                 //手上没东西还硬送的逻辑
+            }
+
+            if (DishInHand)
+            {
+                DishInHand.transform.localPosition = new Vector3(0.3f, -0.23f, 0);
             }
         }
 
