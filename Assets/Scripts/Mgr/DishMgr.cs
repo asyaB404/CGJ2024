@@ -7,17 +7,19 @@ using UnityEngine;
 public class DishMgr : SingletonMono<DishMgr>
 {
     private readonly Queue<Dish>[] _queues = new Queue<Dish>[Const.H];
+
     [SerializeField] private GameObject dishPrefab;
+
     //菜品贴图
     [SerializeField] private Sprite[] dishIcons;
     public Sprite[] DishIcons => dishIcons;
 
-    public Dish SpawnDish(Vector2 pos)
+    public Dish SpawnDish(Vector2 pos, DishType dishType)
     {
         GameObject gobj = Instantiate(dishPrefab, transform, false);
         gobj.transform.localPosition = pos;
         Dish dish = gobj.GetComponent<Dish>();
-        dish.InitForRandom();
+        dish.Init(dishType);
         return dish;
     }
 
@@ -38,7 +40,7 @@ public class DishMgr : SingletonMono<DishMgr>
         }
 
         res = queue.Dequeue();
-        queue.Enqueue(SpawnDish(new Vector2(-Const.W-1, y)));
+        queue.Enqueue(SpawnDish(new Vector2(-Const.W - 1, y), DishType.Dish1 + y));
         UpdateDishs(queue);
         return true;
     }
@@ -60,7 +62,7 @@ public class DishMgr : SingletonMono<DishMgr>
             _queues[i] = new Queue<Dish>();
             for (int j = 0; j < Const.W; j++)
             {
-                _queues[i].Enqueue(SpawnDish(new Vector2(-j - 1, i)));
+                _queues[i].Enqueue(SpawnDish(new Vector2(-j - 1, i), DishType.Dish1 + i));
             }
         }
     }

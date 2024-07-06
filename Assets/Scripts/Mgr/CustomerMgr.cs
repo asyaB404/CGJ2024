@@ -20,12 +20,12 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
     {
         get
         {
-            if (Player.Instance.GameTime < 180)
+            if (Player.Instance.GameTime < 300)
             {
-                return 1.5f - (1.3f * (Player.Instance.GameTime / 180));
+                return 1.5f - (1.0f * (Player.Instance.GameTime / 300));
             }
 
-            return 0.2f;
+            return 0.5f;
         }
     }
 

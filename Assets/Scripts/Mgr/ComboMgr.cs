@@ -36,7 +36,7 @@ public class ComboMgr : SingletonMono<ComboMgr>
             else
             {
                 Combo += 1;
-                _combingTime = 0.5f;
+                _combingTime = 1.5f;
                 UpdateCombo();
             }
         }
