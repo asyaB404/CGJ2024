@@ -67,15 +67,13 @@ public class Player : SingletonMono<Player>
             {
                 if (DishInHand && CustomerMgr.Instance.SendDishToCustomer(DishInHand, Y))
                 {
-                    //送餐成功
+                    DishInHand.DeSpawn();
+                    DishInHand = null;
                 }
                 else
                 {
                     //送餐失败
                 }
-
-                DishInHand.DeSpawn();
-                DishInHand = null;
             }
             else
             {

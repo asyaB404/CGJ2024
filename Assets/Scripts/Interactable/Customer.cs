@@ -11,10 +11,11 @@ public class Customer : MonoBehaviour
     private int _score;
 
     [SerializeField] private SpriteRenderer sr;
-    [SerializeField] private SpriteRenderer sr1;
 
     public void InitForRandom()
     {
+        sr.color = new Color(1, 1, 1, 0);
+        sr.DOFade(1, 0.25f);
         WantType = Utils.GetRandomEnumValue<DishType>();
         //顾客的贴图，到时候得换，测试先用菜品贴图
         sr.sprite = DishMgr.Instance.DishIcons[(int)WantType];
