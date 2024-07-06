@@ -61,23 +61,22 @@ public class UIManager
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="isFade">是否需要淡入淡出</param>
-    public void HidePanel<T>(bool isFade = true) where T : PanelBase
+    public void HidePanel<T>(bool isFade = false) where T : PanelBase
     {
         string panelName = typeof(T).Name;
         HidePanel(panelName, isFade);
     }
-    public void HidePanel(string panelName, bool isFade = true)
+    public void HidePanel(string panelName, bool isFade = false)
     {
 
         if (panelDic.ContainsKey(panelName))
         {
-            if (isFade) panelDic[panelName].HideMe(() =>
-            {
-                PoolManager.Instance.Push(panelDic[panelName].gameObject);
-                panelDic.Remove(panelName);
-            });
+            if (isFade) 
+            panelDic[panelName].HideMe(() =>{PoolManager.Instance.Push(panelDic[panelName].gameObject);
+                panelDic.Remove(panelName);});
             else
             {
+                panelDic[panelName].HideMe();
                 PoolManager.Instance.Push(panelDic[panelName].gameObject);
                 panelDic.Remove(panelName);
             }
@@ -100,15 +99,16 @@ public class UIManager
     }
     public void Clear()
     {
-        List<string> keys = new();
-        foreach (string key in panelDic.Keys)
-        {
-            keys.Add(key);
-        }
-        foreach (string key in keys)
-        {
-            HidePanel(key,false);
-        }
+        panelDic.Clear();
+        // List<string> keys = new();
+        // foreach (string key in panelDic.Keys)
+        // {
+        //     keys.Add(key);
+        // }
+        // foreach (string key in keys)
+        // {
+        //     HidePanel(key,false);
+        // }
 
     }
 

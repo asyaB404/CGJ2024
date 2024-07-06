@@ -21,13 +21,13 @@ public abstract class PanelBase : MonoBehaviour
         Debug.Log("实现了这一步");
     }
     public virtual void ShowMe(){
-        isHide=false;
-        canvasGroup.alpha=0;
+        // isHide=false;
+        canvasGroup.alpha=1;
     }
     // Update is called once per frame
     public virtual void HideMe(UnityAction callBackAction=null){
-        isHide=true;
-        canvasGroup.alpha=1;
+        // isHide=true;
+        canvasGroup.alpha=0;
         unityAction=callBackAction;
     }
     protected virtual void Update()
@@ -44,5 +44,8 @@ public abstract class PanelBase : MonoBehaviour
                 canvasGroup.alpha+=speed*Time.deltaTime;
             if(canvasGroup.alpha>=1)canvasGroup.alpha=1;
         }
+    }
+    protected virtual void OnDestroy(){
+        HideMe();
     }
 }

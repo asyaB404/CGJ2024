@@ -17,7 +17,11 @@ public class Player : SingletonMono<Player>
 
     //玩家目前得到的积分
     private int score;
-    public int Score { get{return score;} set{} }
+    public int Score { get{return score;} set{
+        score=value;
+        GamePanel_ gameui=UIManager.Instance.GetPanel<GamePanel_>();
+        if(gameui)gameui.score.text="得分："+score;
+    } }
 
     //血条
     private float health;
@@ -42,24 +46,22 @@ public class Player : SingletonMono<Player>
 
     private void Update()
     {
-<<<<<<< HEAD
+// <<<<<<< HEAD
         if (health <= 0) return;
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            if (Time.timeScale == 0)
+            if (UIManager.Instance.GetPanel<StopPanel>()!=null)
             {
-                Time.timeScale = 1;
                 UIManager.Instance.HidePanel<StopPanel>();
             }
             else
             {
-                Time.timeScale = 0;
                 UIManager.Instance.ShowPanel<StopPanel>();
             }
         }
-=======
+// =======
         GameTime += Time.deltaTime;
->>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
+// >>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (Y >= Const.H - 1)
@@ -131,13 +133,13 @@ public class Player : SingletonMono<Player>
             DishInHand = null;
         }
     }
-<<<<<<< HEAD
+// <<<<<<< HEAD
     private void GameOver()
     {
         UIManager.Instance.ShowPanel<OverPanel>();
     }
 }
 
-=======
-}
->>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
+// =======
+// }
+// >>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0

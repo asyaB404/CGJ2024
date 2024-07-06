@@ -10,7 +10,7 @@ public class OverPanel : PanelBase
     public Button goHome;
     protected override void Init()
     {
-        again.onClick.AddListener(()=>SceneManager.LoadScene("Game"));
-        goHome.onClick.AddListener(()=>SceneManager.LoadScene("Home"));
+        again.onClick.AddListener(()=>MySceneManager.MSceneManager("Game"));
+        goHome.onClick.AddListener(()=>MySceneManager.MSceneManager("Home"));
     }
 }
