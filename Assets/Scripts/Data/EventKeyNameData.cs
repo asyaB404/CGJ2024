@@ -13,4 +13,6 @@ public class EventKeyNameData
     public static string UI_UpdateMoney = "UI_UpdateMoney";
     public static string UI_ShowImage = "UI_ShowImage";
     public static string UI_DelImage = "UI_HideImage";
+    public static string UI_ChangeImage = "UI_ChangeImage";
+    public static string UI_ShowEffector = "UI_UI_ShowEffector";
 }

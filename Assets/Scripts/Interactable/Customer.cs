@@ -1,10 +1,12 @@
 using UnityEngine;
 
 
-public class Customer : MonoBehaviour
+public class Customer : MonoBehaviour,IGetUI_ID
 {
     //顾客需要的菜品类型
     public DishType WantType { get; private set; }
+    public int UI_ID { get; set; }
+
     //送餐成功给予的积分
     private int _score;
     
