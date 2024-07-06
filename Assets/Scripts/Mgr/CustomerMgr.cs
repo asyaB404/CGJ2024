@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 
@@ -10,8 +11,23 @@ public class CustomerMgr : SingletonMono<CustomerMgr>
 
     [SerializeField] private GameObject customerPrefab;
 
+    public int Count =>
+        _queues.Sum(variable => variable.Count);
+
+
     //刷新顾客间隔
-    public float SpawnDuration { get; set; } = 1.5f;
+    public float SpawnDuration
+    {
+        get
+        {
+            if (Player.Instance.GameTime < 180)
+            {
+                return 1.5f - (1.3f * (Player.Instance.GameTime / 180));
+            }
+
+            return 0.2f;
+        }
+    }
 
     //计时器
     private float _timer;

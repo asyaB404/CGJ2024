@@ -5,7 +5,8 @@ public enum DishType
 {
     Dish1,
     Dish2,
-    Dish3
+    Dish3,
+    Dish4
 }
 
 public class Dish : MonoBehaviour
