@@ -88,7 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12191c9424f55f443acb67450c968bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0
+  fadeSpeed: 1
   id: 0
-  pos: {x: 0, y: 0, z: 0}
-  isShow: 0
-  isHide: 0

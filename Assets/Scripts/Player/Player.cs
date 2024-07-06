@@ -8,6 +8,7 @@ public class Player : SingletonMono<Player>
 {
     public float GameTime { get; private set; }
 
+
     //手上的菜品
     public Dish DishInHand { get; private set; } = null;
 

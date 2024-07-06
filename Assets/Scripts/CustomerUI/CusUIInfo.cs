@@ -34,7 +34,7 @@ public class CusUIInfo : MonoBehaviour
     {
         if(isShow && image.color.a < 1)
         {
-            image.color += unit * fadeSpeed;
+            image.color += unit * fadeSpeed*Time.deltaTime;
             if(image.color.a >= 1)
             {
                 isShow = false;
@@ -43,11 +43,12 @@ public class CusUIInfo : MonoBehaviour
         }
         else if(isHide && image.color.a > 0)
         {
-            image.color -= unit* fadeSpeed;
+            image.color -= unit* fadeSpeed*Time.deltaTime;
             if(image.color.a <= 0)
             {
                 isHide = false;
                 image.color = new Color(1, 1, 1, 0);
+                Destroy(this.gameObject);
                 afterHideEvents?.Invoke();
             }
         }
@@ -81,5 +82,11 @@ public class CusUIInfo : MonoBehaviour
     {
         Sprite[] sprites = Resources.LoadAll<Sprite>("UI/Dish");
         return sprites[(int)type];
+    }
+
+    public void ChangeSprite(bool isMatch)
+    {
+        Sprite[] sprtes = Resources.LoadAll<Sprite>("UI/TorF");
+        image.sprite = isMatch ? sprtes[0] : sprtes[1];
     }
 }
