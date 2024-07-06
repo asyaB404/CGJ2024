@@ -4,6 +4,7 @@ public class MyRandom
 {
     private Random random;
     private static MyRandom instance;
+
     public static MyRandom Instance
     {
         get
@@ -23,6 +24,11 @@ public class MyRandom
         return random.Next();
     }
 
+    public int NextInt(int max)
+    {
+        return random.Next(max);
+    }
+
     public int NextInt(int min, int max)
     {
         return random.Next(min, max);
@@ -37,7 +43,9 @@ public class MyRandom
     {
         return (float)(min + (random.NextDouble() * (max - min)));
     }
-    public bool NextBool(){
-        return random.Next(0, 2)==0;
+
+    public bool NextBool()
+    {
+        return random.Next(0, 2) == 0;
     }
 }
