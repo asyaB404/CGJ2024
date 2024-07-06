@@ -14,6 +14,13 @@ public class Dish : MonoBehaviour
     public DishType Type { get; private set; }
     [SerializeField] private SpriteRenderer sr;
 
+
+    public void Init(DishType type)
+    {
+        Type = type;
+        sr.sprite = DishMgr.Instance.DishIcons[(int)Type];
+    }
+
     public void InitForRandom()
     {
         Type = Utils.GetRandomEnumValue<DishType>();

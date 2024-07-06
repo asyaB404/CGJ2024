@@ -16,36 +16,24 @@ public class Player : SingletonMono<Player>
     private int Y => Mathf.FloorToInt(transform.position.y);
 
     //玩家目前得到的积分
+<<<<<<< HEAD
     private int score;
     public int Score { get{return score;} set{
         score=value;
         GamePanel_ gameui=UIManager.Instance.GetPanel<GamePanel_>();
         if(gameui)gameui.score.text="得分："+score;
     } }
+=======
+    public int Score { get; set; }
+>>>>>>> origin/main
 
     //血条
-    private float health;
-    public float Health
-    {
-        get { return health; }
-        set
-        {
-            health = value; 
-            if (health <= 0) { health = 0; GameOver(); }
-            GamePanel_ gameui=UIManager.Instance.GetPanel<GamePanel_>();
-            if(gameui)gameui.health.value=health/100;
-        }
-    }
-
-    public int Combo { get; private set; }
-
-    public void AddCombo()
-    {
-        Combo += 1;
-    }
+    public float Health { get; set; }
+    
 
     private void Update()
     {
+<<<<<<< HEAD
 // <<<<<<< HEAD
         if (health <= 0) return;
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -62,6 +50,9 @@ public class Player : SingletonMono<Player>
 // =======
         GameTime += Time.deltaTime;
 // >>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
+=======
+        GameTime += Time.deltaTime;
+>>>>>>> origin/main
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (Y >= Const.H - 1)
@@ -104,15 +95,13 @@ public class Player : SingletonMono<Player>
             {
                 if (DishInHand && CustomerMgr.Instance.SendDishToCustomer(DishInHand, Y))
                 {
-                    //送餐成功
+                    DishInHand.DeSpawn();
+                    DishInHand = null;
                 }
                 else
                 {
                     //送餐失败
                 }
-
-                DishInHand.DeSpawn();
-                DishInHand = null;
             }
             else
             {
@@ -133,6 +122,7 @@ public class Player : SingletonMono<Player>
             DishInHand = null;
         }
     }
+<<<<<<< HEAD
 // <<<<<<< HEAD
     private void GameOver()
     {
@@ -143,3 +133,6 @@ public class Player : SingletonMono<Player>
 // =======
 // }
 // >>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
+=======
+}
+>>>>>>> origin/main
