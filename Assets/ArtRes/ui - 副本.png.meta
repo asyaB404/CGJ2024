@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9bbb3ffe74f993946ad758a4a2e70090
+guid: 540bf792b4bb690479a42567e06ddaff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "tuan\u56FE\u6848_0"
+      name: "ui - \u526F\u672C_1"
       rect:
         serializedVersion: 2
-        x: 2450
+        x: 0
         y: 0
-        width: 615
-        height: 1660
+        width: 3065
+        height: 337
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 749888bf538a53b46ac3e1fa0c0019b9
-      internalID: -444262672
+      spriteID: a8f1aa9671b5b704c9a1e3cba2bac838
+      internalID: 628698883
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "tuan\u56FE\u6848_0": -444262672
+      "ui - \u526F\u672C_0": -1355682894
+      "ui - \u526F\u672C_1": 628698883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

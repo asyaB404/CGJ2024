@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: combo-shuzi_0
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 838
+        width: 109
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d7311084747824b8b55a75c2f38a0a
+      internalID: -1242878125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 838
+        width: 94
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f78e038126475498a8d6c395a5c553
+      internalID: -2020941857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 843
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6869a8cd74034924282831fbca636ace
+      internalID: -1314098009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 843
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf3f14f1114f3d4fb313c94765b2ad0
+      internalID: -1463950410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_4
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 843
+        width: 94
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1b8cb4228a36b4e8dfd4805ca9b545
+      internalID: -717963942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 843
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cb2d5faa5b0df4e8b26c11b02fa17a
+      internalID: 1535783016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_6
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 843
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3be21f25e70f044b689a1a1d617fa8
+      internalID: 1272913972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_7
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 848
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268ee8cfe5389f1438d568a49076fbf7
+      internalID: 1314635618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_8
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 853
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14eafbda57d2c64cad0052d13c1e0ea
+      internalID: 264770164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_9
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 853
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7bea46674a3a846bae1cd9deebbe6d
+      internalID: -142129487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: combo-shuzi_10
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 633
+        width: 454
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3386d569e614e47b1966aaa1b1e538
+      internalID: 6645603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +350,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      combo-shuzi_0: -1242878125
+      combo-shuzi_1: -2020941857
+      combo-shuzi_10: 6645603
+      combo-shuzi_11: 1678061978
+      combo-shuzi_12: -896997027
+      combo-shuzi_13: 1240207788
+      combo-shuzi_14: 1688356469
+      combo-shuzi_2: -1314098009
+      combo-shuzi_3: -1463950410
+      combo-shuzi_4: -717963942
+      combo-shuzi_5: 1535783016
+      combo-shuzi_6: 1272913972
+      combo-shuzi_7: 1314635618
+      combo-shuzi_8: 264770164
+      combo-shuzi_9: -142129487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
