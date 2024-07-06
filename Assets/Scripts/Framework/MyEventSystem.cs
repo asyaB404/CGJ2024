@@ -5,6 +5,17 @@ using UnityEngine.Events;
 
 public interface IEventInfos { }
 
+public class EventInfos<T,T1,T2> : IEventInfos
+{
+    public UnityAction<T, T1, T2> unityActions;
+
+    public EventInfos() { }
+    public EventInfos(UnityAction<T, T1, T2> unityAction)
+    {
+        this.unityActions = unityAction;
+    }
+}
+
 public class EventInfos<T, T1> : IEventInfos
 {
     public UnityAction<T, T1> unityActions;
@@ -95,6 +106,19 @@ public class MyEventSystem
             eventDict.Add(eventName, eventInfos);
         }
     }
+    
+    public void AddEventListener<T, T1,T2>(string eventName, UnityAction<T, T1,T2> action)
+    {
+        if (eventDict.TryGetValue(eventName, out IEventInfos existingAction))
+        {
+            (existingAction as EventInfos<T, T1,T2>).unityActions += action;
+        }
+        else
+        {
+            EventInfos<T, T1,T2> eventInfos = new(action);
+            eventDict.Add(eventName, eventInfos);
+        }
+    }
 
     public void RemoveEventListener(string eventName, UnityAction action)
     {
@@ -125,6 +149,17 @@ public class MyEventSystem
         if (eventDict.TryGetValue(eventName, out IEventInfos existingAction))
         {
             (existingAction as EventInfos<T, T1>).unityActions -= action;
+        }
+        else
+        {
+            Debug.LogWarning("-------->   " + eventName + "事件为空,无法被移除");
+        }
+    } 
+    public void RemoveEventListener<T, T1,T2>(string eventName, UnityAction<T, T1,T2> action)
+    {
+        if (eventDict.TryGetValue(eventName, out IEventInfos existingAction))
+        {
+            (existingAction as EventInfos<T, T1,T2>).unityActions -= action;
         }
         else
         {
@@ -161,6 +196,17 @@ public class MyEventSystem
         if (eventDict.TryGetValue(eventName, out IEventInfos existingAction))
         {
             (existingAction as EventInfos<T, T1>).unityActions?.Invoke(eventData, eventData1);
+        }
+        else
+        {
+            Debug.LogWarning("-------->   " + eventName + "事件为空,不能被触发");
+        }
+    }
+    public void EventTrigger<T, T1,T2>(string eventName, T eventData, T1 eventData1,T2 eventData2)
+    {
+        if (eventDict.TryGetValue(eventName, out IEventInfos existingAction))
+        {
+            (existingAction as EventInfos<T, T1,T2>).unityActions?.Invoke(eventData, eventData1,eventData2);
         }
         else
         {
