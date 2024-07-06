@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06509aa849e4c94a2bac99ad8328b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   sr: {fileID: 1587684824}
 --- !u!1001 &1800894491
 PrefabInstance:
@@ -726,6 +727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcfe8d31cac4a87b857c92b329aead1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> origin/main
   dishPrefab: {fileID: 3708175454874559382, guid: 5f16d87f154a9bd45a6c3f8412b9c8dc, type: 3}
   dishIcons:
   - {fileID: 21300000, guid: 74d1ba770c1ac7c44ba528ba7ed17bdf, type: 3}
@@ -739,5 +742,8 @@ SceneRoots:
   - {fileID: 1845799359}
   - {fileID: 1230403835}
   - {fileID: 1543253121}
+<<<<<<< HEAD
   - {fileID: 1827134675}
   - {fileID: 1587684825}
+=======
+>>>>>>> origin/main

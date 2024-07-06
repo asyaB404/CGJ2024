@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e95fdc454d5b04439040030cf1a3691
+guid: e3a06a53803bada49902b96878d35b43
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -97,253 +110,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_0"
+      name: combo-shuzi_0
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 1263
-        width: 144
-        height: 279
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 143
+        y: 838
+        width: 109
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daa15c5b644f30b4d9e8ff82799a5818
-      internalID: -2049439023
+      spriteID: 81d7311084747824b8b55a75c2f38a0a
+      internalID: -1242878125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_1"
+      name: combo-shuzi_1
       rect:
         serializedVersion: 2
-        x: 1973
-        y: 1263
-        width: 144
-        height: 279
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 263
+        y: 838
+        width: 94
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd91c4e8e71ca08448d36aee348f7c85
-      internalID: -1530579306
+      spriteID: 71f78e038126475498a8d6c395a5c553
+      internalID: -2020941857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_2"
+      name: combo-shuzi_2
       rect:
         serializedVersion: 2
-        x: 2303
-        y: 1263
-        width: 143
-        height: 279
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 388
+        y: 843
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d6424a2d4baa6e47b10410bffb5a7a0
-      internalID: 1449280073
+      spriteID: 6869a8cd74034924282831fbca636ace
+      internalID: -1314098009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_3"
+      name: combo-shuzi_3
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 983
-        width: 144
-        height: 279
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 528
+        y: 843
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 400ffe7e22e26254a9b9e21472735246
-      internalID: 1391275667
+      spriteID: fcf3f14f1114f3d4fb313c94765b2ad0
+      internalID: -1463950410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_4"
+      name: combo-shuzi_4
       rect:
         serializedVersion: 2
-        x: 1973
-        y: 983
-        width: 144
-        height: 279
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 653
+        y: 843
+        width: 94
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08864552804802b4d838528875aa3afa
-      internalID: -310956554
+      spriteID: 7b1b8cb4228a36b4e8dfd4805ca9b545
+      internalID: -717963942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_5"
+      name: combo-shuzi_5
       rect:
         serializedVersion: 2
-        x: 2303
-        y: 981
-        width: 143
-        height: 279
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 768
+        y: 843
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7dcbd7f7b933fb4f8af299d6441b332
-      internalID: 1224706608
+      spriteID: b4cb2d5faa5b0df4e8b26c11b02fa17a
+      internalID: 1535783016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_6"
+      name: combo-shuzi_6
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 701
-        width: 144
-        height: 278
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 914
+        y: 843
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d40b1f098729f8545b2b087352fc2d57
-      internalID: -553155603
+      spriteID: fd3be21f25e70f044b689a1a1d617fa8
+      internalID: 1272913972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_7"
+      name: combo-shuzi_7
       rect:
         serializedVersion: 2
-        x: 1973
-        y: 703
-        width: 144
-        height: 278
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1053
+        y: 848
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eba0121cb93924fb2848073e31ada3
-      internalID: 1295587397
+      spriteID: 268ee8cfe5389f1438d568a49076fbf7
+      internalID: 1314635618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_8"
+      name: combo-shuzi_8
       rect:
         serializedVersion: 2
-        x: 2301
-        y: 701
-        width: 143
-        height: 278
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1198
+        y: 853
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e901ebeccd4f66c47b48cfd0effca50b
-      internalID: 1640694047
+      spriteID: f14eafbda57d2c64cad0052d13c1e0ea
+      internalID: 264770164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_9"
+      name: combo-shuzi_9
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 423
-        width: 144
-        height: 278
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1328
+        y: 853
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7e43f3b8da1e954aa2aa1611814623b
-      internalID: 590054976
+      spriteID: 4e7bea46674a3a846bae1cd9deebbe6d
+      internalID: -142129487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5BA2\u4EBA_10"
+      name: combo-shuzi_10
       rect:
         serializedVersion: 2
-        x: 1968
-        y: 423
-        width: 144
-        height: 278
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 698
+        y: 633
+        width: 454
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49edfe5fcec95bb409bc3f79afcf9fba
-      internalID: 2110240002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u5BA2\u4EBA_11"
-      rect:
-        serializedVersion: 2
-        x: 2303
-        y: 423
-        width: 143
-        height: 278
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26a222f67372fbc43b6c4c9919b5d431
-      internalID: -1914071293
+      spriteID: 4d3386d569e614e47b1966aaa1b1e538
+      internalID: 6645603
       vertices: []
       indices: 
       edges: []
@@ -359,18 +351,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u5BA2\u4EBA_0": -2049439023
-      "\u5BA2\u4EBA_1": -1530579306
-      "\u5BA2\u4EBA_10": 2110240002
-      "\u5BA2\u4EBA_11": -1914071293
-      "\u5BA2\u4EBA_2": 1449280073
-      "\u5BA2\u4EBA_3": 1391275667
-      "\u5BA2\u4EBA_4": -310956554
-      "\u5BA2\u4EBA_5": 1224706608
-      "\u5BA2\u4EBA_6": -553155603
-      "\u5BA2\u4EBA_7": 1295587397
-      "\u5BA2\u4EBA_8": 1640694047
-      "\u5BA2\u4EBA_9": 590054976
+      combo-shuzi_0: -1242878125
+      combo-shuzi_1: -2020941857
+      combo-shuzi_10: 6645603
+      combo-shuzi_11: 1678061978
+      combo-shuzi_12: -896997027
+      combo-shuzi_13: 1240207788
+      combo-shuzi_14: 1688356469
+      combo-shuzi_2: -1314098009
+      combo-shuzi_3: -1463950410
+      combo-shuzi_4: -717963942
+      combo-shuzi_5: 1535783016
+      combo-shuzi_6: 1272913972
+      combo-shuzi_7: 1314635618
+      combo-shuzi_8: 264770164
+      combo-shuzi_9: -142129487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9bbb3ffe74f993946ad758a4a2e70090
+guid: 8b4019933abfecf4f8c3b84c014ee221
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "tuan\u56FE\u6848_0"
+      name: "\u5BA2\u4EBA\u8D34\u56FE_0"
       rect:
         serializedVersion: 2
-        x: 2450
-        y: 0
-        width: 615
-        height: 1660
+        x: 1713
+        y: 423
+        width: 144
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 749888bf538a53b46ac3e1fa0c0019b9
-      internalID: -444262672
+      spriteID: a91f3260c25a70c4182c67663da1d644
+      internalID: 1737941608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u5BA2\u4EBA\u8D34\u56FE_1"
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 423
+        width: 144
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde29c04011b6534c9ce9d302d1c5596
+      internalID: -854947161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u5BA2\u4EBA\u8D34\u56FE_2"
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 418
+        width: 143
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec19ad49436ad34095319b3be7445d8
+      internalID: 665908165
       vertices: []
       indices: 
       edges: []
@@ -141,7 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "tuan\u56FE\u6848_0": -444262672
+      "\u5BA2\u4EBA\u8D34\u56FE_0": 1737941608
+      "\u5BA2\u4EBA\u8D34\u56FE_1": -854947161
+      "\u5BA2\u4EBA\u8D34\u56FE_2": 665908165
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

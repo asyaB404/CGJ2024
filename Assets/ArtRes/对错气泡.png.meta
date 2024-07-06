@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9bbb3ffe74f993946ad758a4a2e70090
+guid: bb57533deb1a26049ad42c75e8a42017
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 270
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "tuan\u56FE\u6848_0"
+      name: "\u5BF9\u9519\u6C14\u6CE1_0"
       rect:
         serializedVersion: 2
-        x: 2450
-        y: 0
-        width: 615
-        height: 1660
+        x: 1634
+        y: 873
+        width: 208
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 749888bf538a53b46ac3e1fa0c0019b9
-      internalID: -444262672
+      spriteID: d552979f069a326428b9dbfb05809169
+      internalID: 1599610379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u5BF9\u9519\u6C14\u6CE1_1"
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 553
+        width: 208
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99c8b1fd7911b14e9716ebaa3b939d1
+      internalID: 1407303011
       vertices: []
       indices: 
       edges: []
@@ -141,7 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "tuan\u56FE\u6848_0": -444262672
+      "\u5BF9\u9519\u6C14\u6CE1_0": 1599610379
+      "\u5BF9\u9519\u6C14\u6CE1_1": 1407303011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

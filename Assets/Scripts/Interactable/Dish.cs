@@ -5,8 +5,12 @@ public enum DishType
 {
     Dish1,
     Dish2,
+<<<<<<< HEAD
     Dish3,
     //Dish4,
+=======
+    Dish3
+>>>>>>> origin/main
 }
 
 public class Dish : MonoBehaviour

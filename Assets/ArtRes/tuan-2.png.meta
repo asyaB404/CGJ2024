@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dc0ad8e708917b84483863f26f72820e
+guid: cf93644940dd0b64fb38579859520885
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -97,106 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u670D\u52A1\u5458_0"
+      name: tuan-2_0
       rect:
         serializedVersion: 2
-        x: 1309
-        y: 1149
-        width: 263
-        height: 298
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2448
+        y: 0
+        width: 617
+        height: 1660
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f848f23971b044140b0131870a92be9f
-      internalID: -406840252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u670D\u52A1\u5458_1"
-      rect:
-        serializedVersion: 2
-        x: 1523
-        y: 1213
-        width: 64
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84c192e7e3b0b924c9a86576876b6872
-      internalID: 262011746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u670D\u52A1\u5458_2"
-      rect:
-        serializedVersion: 2
-        x: 1324
-        y: 1008
-        width: 22
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09d112219346e7f4cb68928ef0c3b892
-      internalID: 1856575194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u670D\u52A1\u5458_3"
-      rect:
-        serializedVersion: 2
-        x: 1339
-        y: 833
-        width: 208
-        height: 299
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaa3db9f67a60b849affa8836a92bf28
-      internalID: -205307729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u670D\u52A1\u5458_4"
-      rect:
-        serializedVersion: 2
-        x: 1339
-        y: 498
-        width: 208
-        height: 299
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b478000bfc841ca4b8560d84facaf16e
-      internalID: -30660192
+      spriteID: 67c3c5be3e528574a8bf88da7fc5e463
+      internalID: -1144012128
       vertices: []
       indices: 
       edges: []
@@ -212,11 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u670D\u52A1\u5458_0": -406840252
-      "\u670D\u52A1\u5458_1": 262011746
-      "\u670D\u52A1\u5458_2": 1856575194
-      "\u670D\u52A1\u5458_3": -205307729
-      "\u670D\u52A1\u5458_4": -30660192
+      tuan-2_0: -1144012128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
