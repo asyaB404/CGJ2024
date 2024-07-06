@@ -32,7 +32,7 @@ public class Player : SingletonMono<Player>
 
 
     //血条
-    public float Health { get; set; }
+    public float Health { get; set; } = 100;
 
 
     private void Update()
@@ -49,8 +49,6 @@ public class Player : SingletonMono<Player>
                 UIManager.Instance.ShowPanel<StopPanel>();
             }
         }
-
-        GameTime += Time.deltaTime;
 
         GameTime += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.W))
