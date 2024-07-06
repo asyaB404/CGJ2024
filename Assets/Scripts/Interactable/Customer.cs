@@ -28,6 +28,7 @@ public class Customer : MonoBehaviour
     /// <param name="isRight"></param>
     public void SendCallBack(bool isRight)
     {
+        ComboMgr.Instance.Combing = isRight;
         if (isRight)
         {
             Player.Instance.Score += _score * ComboMgr.Instance.Combo;
