@@ -1051,6 +1051,13 @@ MonoBehaviour:
   - {fileID: 1802565363, guid: 67be03e9ecda37c4c8e75e9450dd8a2f, type: 3}
   - {fileID: -1427763328, guid: 67be03e9ecda37c4c8e75e9450dd8a2f, type: 3}
   - {fileID: 113892953, guid: 67be03e9ecda37c4c8e75e9450dd8a2f, type: 3}
+  dishIcons1:
+  - {fileID: -1922305884, guid: 83b12331ced45f4419e7e51ba940689b, type: 3}
+  - {fileID: -1075250732, guid: 83b12331ced45f4419e7e51ba940689b, type: 3}
+  - {fileID: -1830581103, guid: 83b12331ced45f4419e7e51ba940689b, type: 3}
+  - {fileID: 763149947, guid: 83b12331ced45f4419e7e51ba940689b, type: 3}
+  - {fileID: 1407303011, guid: bb57533deb1a26049ad42c75e8a42017, type: 3}
+  - {fileID: 1599610379, guid: bb57533deb1a26049ad42c75e8a42017, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

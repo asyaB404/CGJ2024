@@ -12,7 +12,9 @@ public class DishMgr : SingletonMono<DishMgr>
 
     //菜品贴图
     [SerializeField] private Sprite[] dishIcons;
+    [SerializeField] private Sprite[] dishIcons1;
     public Sprite[] DishIcons => dishIcons;
+    public Sprite[] DishIcons1 => dishIcons1;
 
     public Dish SpawnDish(Vector2 pos, DishType dishType)
     {
