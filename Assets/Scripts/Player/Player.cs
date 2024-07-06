@@ -25,19 +25,27 @@ public class Player : SingletonMono<Player>
         set
         {
             _score = value;
-            GamePanel_ gameui = UIManager.Instance.GetPanel<GamePanel_>();
+            GamePanel gameui = UIManager.Instance.GetPanel<GamePanel>();
             if (gameui) gameui.score.text = "得分：" + _score;
         }
     }
 
 
-    //血条
-    public float Health { get; set; } = 100;
+    [SerializeField] private float health = 100;
 
+    public float Health
+    {
+        get => health;
+        set
+        {
+            health = value;
+            GamePanel.Instance.health.value = health;
+        }
+    }
 
     private void Update()
     {
-        if (Health <= 0) return;
+        if (health <= 0) return;
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             if (UIManager.Instance.GetPanel<StopPanel>())
@@ -59,8 +67,8 @@ public class Player : SingletonMono<Player>
                 return;
             }
 
-            //后面可以优化成位移动画
-            transform.position += new Vector3(0, 1, 0);
+            transform.DOLocalMove(transform.position + new Vector3(0, 1, 0), 0.1f).SetEase(Ease.Linear);
+            // transform.position += new Vector3(0, 1, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.S))
@@ -71,7 +79,7 @@ public class Player : SingletonMono<Player>
                 return;
             }
 
-            transform.position += new Vector3(0, -1, 0);
+            transform.DOLocalMove(transform.position + new Vector3(0, -1, 0), 0.1f).SetEase(Ease.Linear);
         }
 
         //取餐
