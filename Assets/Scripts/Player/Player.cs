@@ -20,13 +20,7 @@ public class Player : SingletonMono<Player>
 
     //血条
     public float Health { get; set; }
-
-    public int Combo { get; private set; }
-
-    public void AddCombo()
-    {
-        Combo += 1;
-    }
+    
 
     private void Update()
     {

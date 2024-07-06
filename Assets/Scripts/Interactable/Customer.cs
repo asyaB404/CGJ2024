@@ -30,7 +30,7 @@ public class Customer : MonoBehaviour
     {
         if (isRight)
         {
-            Player.Instance.Score += _score * Player.Instance.Combo;
+            Player.Instance.Score += _score * ComboMgr.Instance.Combo;
         }
         else
         {
