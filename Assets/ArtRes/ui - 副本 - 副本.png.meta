@@ -124,51 +124,6 @@ TextureImporter:
     sprites:
     - serializedVersion: 2
       name: 
-<<<<<<< HEAD
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e97eb03825dee720800000000000000
-      internalID: 2877471580529523173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ui - \u526F\u672C - \u526F\u672C_0"
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 423
-        width: 3019
-        height: 1236
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aec277b87948f054cbf32026eae51844
-      internalID: 1769870151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ui - \u526F\u672C - \u526F\u672C_1"
-=======
->>>>>>> origin/main
       rect:
         serializedVersion: 2
         x: 0
@@ -182,13 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<< HEAD
-      spriteID: 6ee9deb7bb20a934c90a5e0d47a00d48
-      internalID: 73479773
-=======
       spriteID: 5e97eb03825dee720800000000000000
       internalID: 2877471580529523173
->>>>>>> origin/main
       vertices: []
       indices: 
       edges: []
@@ -196,11 +146,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 10df5ed7cc70dba48a66e9a8040aee55
-=======
     spriteID: 
->>>>>>> origin/main
     internalID: 0
     vertices: []
     indices: 
@@ -209,11 +155,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       : 2877471580529523173
-<<<<<<< HEAD
-      "ui - \u526F\u672C - \u526F\u672C_0": 1769870151
-      "ui - \u526F\u672C - \u526F\u672C_1": 73479773
-=======
->>>>>>> origin/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

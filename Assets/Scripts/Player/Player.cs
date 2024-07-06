@@ -16,29 +16,31 @@ public class Player : SingletonMono<Player>
     private int Y => Mathf.FloorToInt(transform.position.y);
 
     //玩家目前得到的积分
-<<<<<<< HEAD
-    private int score;
-    public int Score { get{return score;} set{
-        score=value;
-        GamePanel_ gameui=UIManager.Instance.GetPanel<GamePanel_>();
-        if(gameui)gameui.score.text="得分："+score;
-    } }
-=======
-    public int Score { get; set; }
->>>>>>> origin/main
+
+    private int _score;
+
+    public int Score
+    {
+        get { return _score; }
+        set
+        {
+            _score = value;
+            GamePanel_ gameui = UIManager.Instance.GetPanel<GamePanel_>();
+            if (gameui) gameui.score.text = "得分：" + _score;
+        }
+    }
+
 
     //血条
     public float Health { get; set; }
-    
+
 
     private void Update()
     {
-<<<<<<< HEAD
-// <<<<<<< HEAD
-        if (health <= 0) return;
+        if (Health <= 0) return;
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            if (UIManager.Instance.GetPanel<StopPanel>()!=null)
+            if (UIManager.Instance.GetPanel<StopPanel>())
             {
                 UIManager.Instance.HidePanel<StopPanel>();
             }
@@ -47,12 +49,10 @@ public class Player : SingletonMono<Player>
                 UIManager.Instance.ShowPanel<StopPanel>();
             }
         }
-// =======
+
         GameTime += Time.deltaTime;
-// >>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
-=======
+
         GameTime += Time.deltaTime;
->>>>>>> origin/main
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (Y >= Const.H - 1)
@@ -122,17 +122,10 @@ public class Player : SingletonMono<Player>
             DishInHand = null;
         }
     }
-<<<<<<< HEAD
-// <<<<<<< HEAD
+
+
     private void GameOver()
     {
         UIManager.Instance.ShowPanel<OverPanel>();
     }
 }
-
-// =======
-// }
-// >>>>>>> a20a4a87b50a6de842eaeae7dcf4be6c8266fcf0
-=======
-}
->>>>>>> origin/main
