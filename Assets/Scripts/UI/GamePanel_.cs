@@ -17,5 +17,10 @@ public class GamePanel_ : PanelBase
             Debug.Log("sdaasadd");
         });
     }
-    
+
+    protected override void Update()
+    {
+        base.Update();
+        waiter.text="待取餐人数："+CustomerMgr.Instance.Count;
+    }
 }
