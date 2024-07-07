@@ -23,11 +23,13 @@ public class GamePanel : PanelBase
     protected override void Init()
     {
         menu.onClick.AddListener(() => { UIManager.Instance.ShowPanel<StopPanel>(); });
+        MusicMgr.Instance.PlayBkMusic("bgm");
     }
 
     protected override void Update()
     {
         base.Update();
+        //UI更新不应该放在这
         int custCount = CustomerMgr.Instance.Count;
         waiter.text = "待取餐人数：" + custCount;
         if (custCount > 20) sideOBJ.GetComponent<Image>().sprite = sprites[1];

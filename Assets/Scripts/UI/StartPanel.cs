@@ -11,6 +11,7 @@ public class StartPanel : PanelBase
     protected override void Init()
     {
         GameButton.onClick.AddListener(GameStart);
+        MusicMgr.Instance.PlayBkMusic("bgm");
     }
 
     public void GameStart()

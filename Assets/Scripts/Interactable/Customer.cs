@@ -35,6 +35,7 @@ public class Customer : MonoBehaviour
         {
             Player.Instance.Score += _score * ComboMgr.Instance.Combo;
             sr1.sprite = DishMgr.Instance.DishIcons1[^1];
+            MusicMgr.Instance.PlaySound("a1");
         }
         else
         {
