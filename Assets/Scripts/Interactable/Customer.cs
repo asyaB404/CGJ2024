@@ -41,6 +41,7 @@ public class Customer : MonoBehaviour
         {
             Player.Instance.Health -= 10;
             sr1.sprite = DishMgr.Instance.DishIcons1[^2];
+            MusicMgr.Instance.PlaySound("wrong");
         }
     }
 

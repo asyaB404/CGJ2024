@@ -116,6 +116,7 @@ public class Player : SingletonMono<Player>
                 dish.transform.SetParent(transform);
                 dish.transform.localPosition = new Vector3(0, -0.23f, 0);
                 dish.transform.localScale = new Vector3(1, 0.42f, 1);
+                MusicMgr.Instance.PlaySound("get");
             }
 
             if (DishInHand)
@@ -159,7 +160,7 @@ public class Player : SingletonMono<Player>
                 //手上没东西却硬要销毁的逻辑
                 return;
             }
-
+            MusicMgr.Instance.PlaySound("destroy");
             DishInHand.DeSpawn();
             DishInHand = null;
         }
